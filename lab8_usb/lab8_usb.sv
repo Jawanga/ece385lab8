@@ -47,6 +47,8 @@ module  lab8_usb 		( input         Clk,
     
     logic Reset_h;
 	 logic [7:0] keycode;
+	 logic hs, vs;
+	 
     
     assign {Reset_h}=~ (Reset);  // The push buttons are active low
 	 assign OTG_FSPEED = 1'bz;
@@ -73,7 +75,30 @@ module  lab8_usb 		( input         Clk,
 										 .usb_CS_N(OTG_CS_N),    
 										 .usb_RST_N(OTG_RST_N),   
 										 .usb_INT(OTG_INT) );
-	
+	 /*
+	 module  vga_controller ( input        Clk,       // 50 MHz clock
+                                      Reset,     // reset signal
+                         output logic hs,        // Horizontal sync pulse.  Active low
+								              vs,        // Vertical sync pulse.  Active low
+												  pixel_clk, // 25 MHz pixel clock output
+												  blank,     // Blanking interval indicator.  Active low.
+												  sync,      // Composite Sync signal.  Active low.  We don't use it in this lab,
+												             //   but the video DAC on the DE2 board requires an input for it.
+								 output [9:0] DrawX,     // horizontal coordinate
+								              DrawY );   // vertical coordinate
+	 */
+	 //vga_controller vga_instance(.Clk, .Reset(Reset_h), .hs, .vs,
+	 
+	 /*
+	 module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
+                       output logic [7:0]  Red, Green, Blue );
+	 */
+	 
+	 /*
+	 module  ball ( input Reset, frame_clk,
+               output [9:0]  BallX, BallY, BallS );
+	 */
+	 
 										  
 	 HexDriver hex_inst_0 (keycode[3:0], HEX0);
 	 HexDriver hex_inst_1 (keycode[7:4], HEX1);

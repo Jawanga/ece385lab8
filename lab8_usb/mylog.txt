@@ -2,6 +2,6 @@ Using cable "USB-Blaster [USB-0]", device 1, instance 0x00
 Pausing target processor: OK
 Initializing CPU cache (if present)
 OK
-Downloading 08000000 ( 0%)Downloading 08010000 (82%)Downloading 08013620 (91%)Downloaded 78KB in 1.3s (60.0KB/s)
-Verifying 08000000 ( 0%)Verifying 08010000 (82%)Verifying 08013620 (91%)Verified OK                         
+Downloading 08000000 ( 0%)Downloading 08010000 (82%)Downloading 0801368C (91%)Downloaded 78KB in 1.3s (60.0KB/s)
+Verifying 08000000 ( 0%)Verifying 08010000 (82%)Verifying 0801368C (91%)Verified OK                         
 Starting processor at address 0x080001BC
