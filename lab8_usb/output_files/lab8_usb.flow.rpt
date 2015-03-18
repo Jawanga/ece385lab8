@@ -1,5 +1,5 @@
 Flow report for lab8_usb
-Wed Mar 18 00:18:56 2015
+Wed Mar 18 16:21:44 2015
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Mar 18 00:18:56 2015      ;
+; Flow Status                        ; Successful - Wed Mar 18 16:21:44 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; lab8_usb                                   ;
 ; Top-level Entity Name              ; lab8_usb                                   ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 3,421 / 114,480 ( 3 % )                    ;
-;     Total combinational functions  ; 2,690 / 114,480 ( 2 % )                    ;
-;     Dedicated logic registers      ; 2,415 / 114,480 ( 2 % )                    ;
-; Total registers                    ; 2534                                       ;
-; Total pins                         ; 194 / 529 ( 37 % )                         ;
+; Total logic elements               ; 3,960                                      ;
+;     Total combinational functions  ; 2,846                                      ;
+;     Dedicated logic registers      ; 2,559                                      ;
+; Total registers                    ; 2559                                       ;
+; Total pins                         ; 194                                        ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 16,000 / 3,981,312 ( < 1 % )               ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                             ;
+; Total memory bits                  ; 16,000                                     ;
+; Embedded Multiplier 9-bit elements ; 4                                          ;
+; Total PLLs                         ; 1                                          ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/18/2015 00:17:02 ;
+; Start date & time ; 03/18/2015 16:20:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8_usb            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 70465359187031.142665582207720                               ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 70465359187031.142671365306340                               ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)                              ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                           ; --            ; --          ; --             ;
@@ -99,41 +99,29 @@ agreement for further details.
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:52     ; 1.0                     ; 834 MB              ; 00:01:21                           ;
-; Fitter                    ; 00:00:35     ; 1.7                     ; 1751 MB             ; 00:00:53                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 600 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 811 MB              ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 610 MB              ; 00:00:06                           ;
-; Total                     ; 00:01:44     ; --                      ; --                  ; 00:02:32                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:49     ; 1.0                     ; 835 MB              ; 00:01:12                           ;
+; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:12                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Jawanga          ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Jawanga          ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Jawanga          ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Jawanga          ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Jawanga          ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; Jawanga          ; Windows 7 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off lab8_usb -c lab8_usb
-quartus_fit --read_settings_files=off --write_settings_files=off lab8_usb -c lab8_usb
-quartus_asm --read_settings_files=off --write_settings_files=off lab8_usb -c lab8_usb
-quartus_sta lab8_usb -c lab8_usb
-quartus_eda --read_settings_files=off --write_settings_files=off lab8_usb -c lab8_usb
 
 
 

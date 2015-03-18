@@ -47,8 +47,8 @@ module  lab8_usb 		( input         Clk,
     
     logic Reset_h;
 	 logic [7:0] keycode;
-	 logic hs, vs;
-	 
+	 logic [9:0] DrawX, DrawY;
+	 logic [9:0] BallX, BallY, BallS;
     
     assign {Reset_h}=~ (Reset);  // The push buttons are active low
 	 assign OTG_FSPEED = 1'bz;
@@ -87,18 +87,20 @@ module  lab8_usb 		( input         Clk,
 								 output [9:0] DrawX,     // horizontal coordinate
 								              DrawY );   // vertical coordinate
 	 */
-	 //vga_controller vga_instance(.Clk, .Reset(Reset_h), .hs, .vs,
+	 vga_controller vga_instance(.Clk, .Reset(Reset_h), .hs, .vs, .pixel_clk(VGA_clk), .blank, .sync, .DrawX, .DrawY);
 	 
 	 /*
 	 module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
                        output logic [7:0]  Red, Green, Blue );
 	 */
 	 
+	 color_mapper color_instance(.BallX, .BallY, .DrawX, .DrawY, .Ball_size(BallS), .Red, .Green, .Blue);
 	 /*
 	 module  ball ( input Reset, frame_clk,
                output [9:0]  BallX, BallY, BallS );
 	 */
 	 
+	 ball ball_instance(.Reset(Reset_h), .frame_clk(VGA_clk), .BallX, .BallY, .BallS, .keycode);
 										  
 	 HexDriver hex_inst_0 (keycode[3:0], HEX0);
 	 HexDriver hex_inst_1 (keycode[7:4], HEX1);
