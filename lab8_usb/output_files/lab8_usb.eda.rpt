@@ -1,6 +1,6 @@
 EDA Netlist Writer report for lab8_usb
-Wed Mar 18 00:18:56 2015
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Wed Mar 18 20:20:13 2015
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
 ---------------------
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Mar 18 00:18:56 2015 ;
+; EDA Netlist Writer Status ; Successful - Wed Mar 18 20:20:13 2015 ;
 ; Revision Name             ; lab8_usb                              ;
 ; Top-level Entity Name     ; lab8_usb                              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                          ;
-+-----------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                     ;
-+-----------------------------------------------------------------------------------------------------+
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_85c_slow.svo    ;
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_0c_slow.svo     ;
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_min_1200mv_0c_fast.svo   ;
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb.svo                      ;
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_85c_v_slow.sdo  ;
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_0c_v_slow.sdo   ;
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_min_1200mv_0c_v_fast.sdo ;
-; D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_v.sdo                    ;
-+-----------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                ;
++-------------------------------------------------------------------------------------------+
+; Generated Files                                                                           ;
++-------------------------------------------------------------------------------------------+
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_85c_slow.svo    ;
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_0c_slow.svo     ;
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_min_1200mv_0c_fast.svo   ;
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb.svo                      ;
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_85c_v_slow.sdo  ;
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_7_1200mv_0c_v_slow.sdo   ;
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_min_1200mv_0c_v_fast.sdo ;
+; U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/lab8_usb_v.sdo                    ;
++-------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,21 +88,21 @@ agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Wed Mar 18 00:18:50 2015
+    Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
+    Info: Processing started: Wed Mar 18 20:19:57 2015
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lab8_usb -c lab8_usb
-Info (204019): Generated file lab8_usb_7_1200mv_85c_slow.svo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab8_usb_7_1200mv_0c_slow.svo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab8_usb_min_1200mv_0c_fast.svo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab8_usb.svo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab8_usb_7_1200mv_85c_v_slow.sdo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab8_usb_7_1200mv_0c_v_slow.sdo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab8_usb_min_1200mv_0c_v_fast.sdo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab8_usb_v.sdo in folder "D:/Documents/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb_7_1200mv_85c_slow.svo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb_7_1200mv_0c_slow.svo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb_min_1200mv_0c_fast.svo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb.svo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb_7_1200mv_85c_v_slow.sdo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb_7_1200mv_0c_v_slow.sdo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb_min_1200mv_0c_v_fast.sdo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab8_usb_v.sdo in folder "U:/ECE385/ece385lab8/trunk/lab8_usb/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 610 megabytes
-    Info: Processing ended: Wed Mar 18 00:18:56 2015
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 522 megabytes
+    Info: Processing ended: Wed Mar 18 20:20:14 2015
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:05
 
 

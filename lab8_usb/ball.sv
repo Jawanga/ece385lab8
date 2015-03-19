@@ -43,22 +43,22 @@ module  ball ( input Reset, frame_clk,
         else 
         begin 
 				 case (keycode)
-				 79:
+				 7:
 					begin
 						Ball_X_Motion = Ball_X_Step;
 						Ball_Y_Motion = 10'd0;
 					end
-				 80:
+				 4:
 					begin
-						Ball_X_Motion = ~Ball_X_Step;
+						Ball_X_Motion = ~(Ball_X_Step) + 1'b1;
 						Ball_Y_Motion = 10'd0;
 					end
-				 81:
+				 26:
 					begin
 						Ball_X_Motion = 10'd0;
-						Ball_Y_Motion = ~Ball_Y_Step;
+						Ball_Y_Motion = ~(Ball_Y_Step) + 1'b1;
 					end
-				 82:
+				 22:
 					begin
 						Ball_X_Motion = 10'd0;
 						Ball_Y_Motion = Ball_Y_Step;

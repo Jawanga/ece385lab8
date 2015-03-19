@@ -308,8 +308,8 @@ int main(void)
 
 	// TASK: Write the address to read from the memory for byte 7 of the interface descriptor to HPI_ADDR
 	UsbPrintMem();
-	//UsbRead(0x056C);
-	code = UsbRead(0x056C);//IORD(CY7C67200_BASE,HPI_DATA);
+	IOWR(CY7C67200_BASE, HPI_ADDR, 0x056C);
+	code = IORD(CY7C67200_BASE,HPI_DATA);
 	printf("\ncode = %x\n", code);
 	code = code & 0x0ff;
 	if (code == 0x01)
@@ -323,8 +323,8 @@ int main(void)
 	}
 
 	// TASK: Write the address to read from the memory for the endpoint descriptor to HPI_ADDR.
-	//UsbRead(0x057B);
-	data_size = (/*IORD(CY7C67200_BASE,HPI_DATA)*/UsbRead(0x057B)>>8)&0x0ff;
+	IOWR(CY7C67200_BASE, HPI_ADDR, 0x057B);
+	data_size = 0x08;//(IORD(CY7C67200_BASE,HPI_DATA)>>8)&0x0ff;
 	printf("[ENUM PROCESS]:data packet size is %d\n",data_size);
 
 	// STEP 7 begin
@@ -489,8 +489,8 @@ int main(void)
 
 		// packet starts from 0x051c, reading third byte
 		// TASK: Write the address to read from the memory for byte 3 of the report descriptor to HPI_ADDR.
-		//UsbRead(0x051E);
-		keycode = UsbRead(0x051E);//IORD(CY7C67200_BASE,HPI_DATA);
+		IOWR(CY7C67200_BASE, HPI_ADDR, 0x051E);
+		keycode = IORD(CY7C67200_BASE,HPI_DATA);
 		printf("\nfirst two keycode values are %04x\n",keycode);
 		IOWR(KEYCODE_BASE, 0, keycode & 0xff);
 

@@ -100,7 +100,7 @@ module  lab8_usb 		( input         Clk,
                output [9:0]  BallX, BallY, BallS );
 	 */
 	 
-	 ball ball_instance(.Reset(Reset_h), .frame_clk(VGA_clk), .BallX, .BallY, .BallS, .keycode);
+	 ball ball_instance(.Reset(Reset_h), .frame_clk(vs), .BallX, .BallY, .BallS, .keycode);
 										  
 	 HexDriver hex_inst_0 (keycode[3:0], HEX0);
 	 HexDriver hex_inst_1 (keycode[7:4], HEX1);
