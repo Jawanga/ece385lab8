@@ -1,5 +1,5 @@
 Using cable "USB-Blaster [USB-0]", device 1, instance 0x00
-Processor is already paused
+Pausing target processor: OK
 Initializing CPU cache (if present)
 OK
 Downloading 08000000 ( 0%)Downloading 080104B0 (89%)Downloaded 66KB in 1.0s (66.0KB/s)

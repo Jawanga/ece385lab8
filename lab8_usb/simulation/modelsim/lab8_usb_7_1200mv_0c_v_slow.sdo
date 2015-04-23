@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "lab8_usb")
-  (DATE "03/18/2015 20:20:10")
+  (DATE "04/02/2015 01:26:25")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 14.0.0 Build 200 06/17/2014 SJ Full Version")

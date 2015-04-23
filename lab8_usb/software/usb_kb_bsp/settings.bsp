@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 18, 2015 8:21:23 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1426728083630</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 19, 2015 3:40:18 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1426797618246</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>U:\ECE385\ece385lab8\trunk\lab8_usb\software\usb_kb_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\usb_system.sopcinfo</SopcDesignFile>
